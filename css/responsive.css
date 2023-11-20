@@ -27,6 +27,27 @@
         text-align: center;
     }
 
+    .SesionSucefull {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        place-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .noti {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logeNoti {
+        margin: 0;
+        padding: 0;
+    }
+
     .sesion {
         width: 65%;
     }
@@ -59,6 +80,10 @@
     .validsesion {
         display: none;
     }
+
+    .SesionSucefull {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -83,14 +108,21 @@
     }
 }
 
+@media screen and (max-width: 950px) {
+    .logeNoti {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .sesion {
         width: 70%;
     }
 
-    footer {
-        top: 120ch;
+    .logeNoti {
+        display: block;
     }
+
 
     .validsesion {
         display: grid;
@@ -103,6 +135,15 @@
         width: 170px;
         place-items: center;
         text-align: center;
+    }
+
+    .SesionSucefull {
+        display: flex;
+        place-items: right;
+        justify-content: right;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
     }
 
     .Reg {
@@ -213,9 +254,6 @@
 }
 
 @media screen and (max-width: 750px) {
-    footer {
-        top: 195ch;
-    }
 
     .sucursales {
         flex-direction: column;

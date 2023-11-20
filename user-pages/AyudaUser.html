@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,100;1,300;1,600;1,700&family=Exo+2:ital,wght@0,100;0,300;0,700;0,800;1,500;1,900&family=Heebo:wght@100;300;400;600;900&family=Lato:wght@300;400&family=Roboto:ital,wght@1,300&family=Rowdies:wght@300&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,700;1,500;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -22,29 +23,31 @@
                 <img class="proporlogo" src="../img/logo.png">
                 <img class="proporname" src="../img/logonew.png">
             </div>
-            <div class="validsesion">
-                <a class="Reg" href="../Sesion/register.html">
-                    Registrarse
+            <div class="noti">
+                <img class="logeNoti" src="../img/boton-de-notificaciones white.png">
+            </div>
+            <div class="SesionSucefull border">
+
+                <a class="Reg2">
+                    Bienvenido
                 </a>
 
-                <a class="Ses" href="../Sesion/login.html">
-                    Iniciar Sesion
-                </a>
+                <img class="loge" src="../img/dani.png">
 
             </div>
         </div>
         <div id="Navegation">
             <div class="panels">
                 <div class="optionspage">
-                    <a class="space" href="../index.html">Inicio</a>
+                    <a class="space" href="../user-pages/homeUser.html">Inicio</a>
                     <a class="linewhite"></a>
-                    <a class="space" href="../html/promociones.html">Promociones</a>
+                    <a class="space" href="../user-pages/PromocionesUser.html">Promociones</a>
                     <a class="linewhite"></a>
-                    <a class="space" href="../html/sucursales.html">Sucursales</a>
+                    <a class="space" href="../user-pages/SucursalesUser.html">Sucursales</a>
                     <a class="linewhite"></a>
-                    <a class="space" href="../html/menu.html">Menu</a>
+                    <a class="space" href="../user-pages/MenuUser.html">Menu</a>
                     <a class="linewhite"></a>
-                    <a class="active" href="../html/ayuda.html">Ayuda</a>
+                    <a class="active" href="../user-pages/AyudaUser.html">Ayuda</a>
                 </div>
             </div>
         </div>
@@ -149,9 +152,41 @@
 
             <p>Gracias por confiar en RegioDelis para tus reservaciones. Tu privacidad es importante para nosotros, y
                 estamos comprometidos a protegerla.</p>
+        </div>
+        <div class="Comentario">
+            <form class="formulario" action="procesar_comentario.php" method="POST">
+                <div class="form-group bet">
+                    <label class="gros" for="empresa">Sucursal:</label>
+                    <select name="empresa" id="empresa" class="form-control">
+                        <option class="colorfound" value="Empresa 1">Sucursal 1 - Apodaca</option>
+                        <option class="colorfound" value="Empresa 2">Sucursal 2 - Escobedo</option>
+                        <option class="colorfound" value="Empresa 3">Sucursal 3 - San Nicolas</option>
+                    </select>
+                </div>
+
+                <div class="form-group bet">
+                    <label class="gros" for="calificacion">Calificación:</label>
+                    <div class="stars" id="calificacion">
+                        <span class="star" onclick="setRating(1)">&#9733;</span>
+                        <span class="star" onclick="setRating(2)">&#9733;</span>
+                        <span class="star" onclick="setRating(3)">&#9733;</span>
+                        <span class="star" onclick="setRating(4)">&#9733;</span>
+                        <span class="star" onclick="setRating(5)">&#9733;</span>
+                    </div>
+                    <input type="hidden" name="rating" id="rating" value="0">
+                </div>
+
+                <div class="form-group bet">
+                    <label class="gros" for="comentario">Comentario:</label>
+                    <textarea name="comentario" id="comentario" rows="4" class="form-control"
+                        placeholder="Deja un comentario..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-warning">Enviar Comentario</button>
+            </form>
+        </div>
+    </main>
 </body>
-</div>
-</main>
 <div class="fot">
     <a class="foot">Oficinas centrales. Av. Santo Domingo 1501, Valle de Santo Domingo, Monterrey, N.L., C.P. 66612.
         • 81 2619 6729 •
@@ -160,7 +195,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="../js/sound-btn.js"></script>
+<script src="../js/ComentariosForm.js"></script>
 </body>
 
 </html>
