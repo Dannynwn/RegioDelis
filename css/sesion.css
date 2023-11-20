@@ -1,0 +1,217 @@
+.sesion {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: -30px;
+}
+
+body {
+    background-image: url('../img/Regdark.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.names {
+    width: 35%;
+    margin-right: 20px;
+}
+
+.lastname {
+    width: 65%;
+}
+
+.imageSesion {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid orange;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.733);
+    background-image: url('../img/un-lugar-para-comer-hamburgues.jpg');
+}
+
+.Interactive {
+    width: 60%;
+    height: 100%;
+    background-color: rgb(145, 116, 92);
+    border-radius: 10px;
+    border: 3px solid orange;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.733);
+}
+
+.logoimg {
+    height: 20vh;
+    margin-top: 10px;
+}
+
+.logo {
+    height: 33%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.buton-login {
+    height: auto;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.checkform {
+    height: 33%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.formular {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 10px;
+
+}
+
+.formularlogin {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+
+}
+
+.buton-login h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+    text-decoration: black;
+    text-shadow: 1px 1px 1px black;
+}
+
+#cancel h2 {
+    margin-top: 0px;
+}
+
+.dateslog {
+    text-align: left;
+    width: 75%;
+    margin-top: 10px;
+}
+
+.dateslog h2 {
+    font-size: 13px;
+}
+
+.names h2 {
+    font-size: 13px;
+
+}
+
+.lastname h2 {
+    font-size: 13px;
+}
+
+.btn-sesion {
+    font-weight: bolder;
+    background-color: orange;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 17px;
+    cursor: pointer;
+    color: white;
+    width: 75%;
+    text-shadow: 1px 1px 1px black;
+}
+
+.btn-login {
+    font-weight: bolder;
+    background-color: orange;
+    margin: 0px;
+    border-radius: 10px;
+    padding: 17px;
+    cursor: pointer;
+    color: white;
+    width: 75%;
+    text-shadow: 1px 1px 1px black;
+}
+
+.btn-rege {
+    font-weight: bolder;
+    background-color: rgb(255, 220, 156);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    width: 75%;
+    text-shadow: 1px 1px 1px black;
+    padding-top: 10px;
+
+}
+
+.btn-logear {
+    font-weight: bolder;
+    background-color: rgb(255, 220, 156);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    width: 75%;
+    text-shadow: 1px 1px 1px black;
+    margin-top: -4px;
+}
+
+.registrarse {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.registrarse p {
+    margin-bottom: 10px;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logearse {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logearse p {
+    margin-bottom: 10px;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkform a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}

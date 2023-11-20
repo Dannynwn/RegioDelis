@@ -1,0 +1,511 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rowdies', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    background-color: rgb(49, 48, 47);
+    min-height: 100vh;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+}
+
+.header1 {
+    width: 100%;
+    height: 27vh;
+    background-color: rgb(49, 48, 47);
+    border-bottom: 3px solid orange;
+
+}
+
+#Navbar {
+    height: 75%;
+    background-color: rgb(49, 48, 47);
+    display: flex;
+    align-items: center;
+}
+
+#Navegation {
+    height: 25%;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+}
+
+.panels a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.space {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    color: rgb(187, 187, 187);
+    padding: 8px;
+    border: none;
+}
+
+.space:hover {
+    transition-duration: 0.3s;
+    color: rgb(187, 187, 187);
+    background-color: rgba(255, 255, 255, 0.089);
+}
+
+.active {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgba(255, 255, 255, 0.089);
+}
+
+.active:hover {
+    transition-duration: 0.3s;
+    color: rgb(187, 187, 187);
+    background-color: rgba(255, 255, 255, 0.089);
+}
+
+.linewhite {
+    border-left: 1px solid gray;
+}
+
+.proporlogo {
+    height: 15vh;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.proporname {
+    height: 10vh;
+    justify-content: center;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.panels {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: none;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: 0.5s;
+}
+
+section img:hover {
+    width: 50%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+picture {
+    width: 100%;
+    height: 70vh;
+}
+
+article {
+    width: 100%;
+    height: 70vh;
+}
+
+.sucursales {
+    justify-content: center;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.Scs {
+    width: 70%;
+    height: 300px;
+    margin: 30px;
+    background-color: rgb(97, 90, 79);
+    border: 3px solid orange;
+    display: flex;
+}
+
+.mapa {
+    width: 50%;
+    border-right: 3px solid orange;
+}
+
+.infoSucu {
+    width: 50%;
+}
+
+.closed {
+    background-color: black;
+    opacity: 0.3;
+}
+
+.notchair {
+    background-color: #3a2f29ce;
+}
+
+.imgSucu {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.placeSucu {
+    height: 150px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 7px;
+}
+
+#sucursal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.ContentHelp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/Regdark.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    height: 100%;
+    position: relative;
+}
+
+.help {
+    width: 70%;
+    margin: 60px;
+    padding: 100px;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid orange;
+    box-shadow: 1px 1px 3px #000000b9;
+    background-color: rgba(49, 48, 47, 0.829);
+}
+
+.help a {
+    letter-spacing: 0.07em;
+    word-spacing: 0.07em;
+    text-decoration: none;
+    font-weight: bolder;
+    opacity: 1;
+    color: white;
+
+}
+
+li {
+    display: none;
+}
+
+.help p {
+    opacity: 1;
+    padding: 20px;
+    letter-spacing: 0.07em;
+    word-spacing: 0.07em;
+    color: white;
+}
+
+.help h1 {
+    opacity: 1;
+    padding-bottom: 30px;
+    letter-spacing: 0.07em;
+    word-spacing: 0.07em;
+    color: white;
+}
+
+.help h2 {
+    opacity: 1;
+    padding: 30px;
+    letter-spacing: 0.07em;
+    word-spacing: 0.07em;
+    color: white;
+}
+
+.help h3 {
+    opacity: 1;
+    padding-top: 30px;
+    letter-spacing: 0.07em;
+    word-spacing: 0.07em;
+    color: white;
+}
+
+
+
+.infoSucu a {
+    color: white;
+    width: 80%;
+    font-size: 13px
+}
+
+.infoSucu h1 {
+    text-align: center;
+    background-color: rgba(65, 61, 55, 0.932);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    display: grid;
+    place-items: center;
+
+
+}
+
+.btn-reservacion {
+    background-color: orange;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.up1 {
+    width: 60%;
+
+}
+
+.up2 {
+    width: 20%;
+}
+
+.Scs h1 {
+    color: white;
+    font-size: 15px;
+}
+
+.promo {
+    width: 95%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.promo img {
+    margin: 10px;
+    height: 50vh;
+    border: 3px solid orange;
+    transition-duration: 0.3s;
+}
+
+.promo img:hover {
+    box-shadow: 0 0 50px rgba(255, 202, 167, 0.363);
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+#Navegation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.optionspage {
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+
+.contentNav {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.contentNav a {
+    text-decoration: none;
+}
+
+.validsesion {
+    width: auto;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.Ses {
+    background-color: rgb(218, 218, 218);
+    border-radius: 25px;
+    padding: 13px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-style: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.Reg {
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-style: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+footer {
+    background-color: rgb(15, 15, 15);
+    position: absolute;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    top: 100ch;
+    width: 100%;
+    border-top: 3px solid orange;
+}
+
+footer a {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.fot {
+    background-color: rgb(15, 15, 15);
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    top: 100%;
+    width: 100%;
+    border-top: 3px solid orange;
+}
+
+.fot a {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.foot {
+    display: grid;
+    place-items: center;
+}
+
+.footerNew {
+    background-color: rgb(15, 15, 15);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 180px;
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid orange;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: sticky;
+    min-width: 100px;
+    max-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid orange;
+    background-color: #413c3c;
+    z-index: 2;
+}
+
+#tipoReservacion {
+    background-color: #dfc7ac;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload a {
+    width: 30%;
+}
+
+#datepicker {
+    background-color: #dfc7ac;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.Resrlogo {
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown-content a {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.footerNew a {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+#footer {
+    background-color: rgb(15, 15, 15);
+    position: absolute;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid orange;
+}
+
+#footer a {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
