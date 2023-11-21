@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <title>Promociones</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,100;1,300;1,600;1,700&family=Exo+2:ital,wght@0,100;0,300;0,700;0,800;1,500;1,900&family=Heebo:wght@100;300;400;600;900&family=Lato:wght@300;400&family=Roboto:ital,wght@1,300&family=Rowdies:wght@300&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,700;1,500;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header1">
+        <div id="Navbar">
+            <div class="contentNav">
+                <img class="proporlogo" src="../img/logo.png">
+                <img class="proporname" src="../img/logonew.png">
+            </div>
+            <div class="noti">
+                <button class="custom-button" id="miBoton1">Administrar</button>
+                <div class="dropdown-Admin" id="miDropdown1">
+                    <img class="Resrlogo" src="../img/logo.png">
+                    <div class="spacedrop"></div>
+                    <a href="../admin-pages/SucursalesAdmin.html" class="btn-reservacion">Crear nueva sucursal</a>
+
+                    <a href="../admin-pages/PromocionesAdmin.html" class="btn-reservacion">Agregar nueva promoción</a>
+
+                    <a href="../admin-pages/menuAdmin.html" class="btn-reservacion">Modificar menu</a>
+
+                </div>
+            </div>
+            <div class="SesionSucefull border">
+
+                <a class="Reg2">
+                    Bienvenido
+                </a>
+
+                <img class="loge" src="../img/dani.png">
+
+            </div>
+        </div>
+        <div id="Navegation">
+            <div class="panels">
+                <div class="optionspage">
+                    <a class="space" href="../admin-pages/homeAdmin.html">Inicio</a>
+                    <a class="linewhite"></a>
+                    <a class="active" href="../admin-pages/PromocionesAdmin.html">Promociones</a>
+                    <a class="linewhite"></a>
+                    <a class="space" href="../admin-pages/SucursalesAdmin.html">Sucursales</a>
+                    <a class="linewhite"></a>
+                    <a class="space" href="../admin-pages/menuAdmin.html">Menu</a>
+                    <a class="linewhite"></a>
+                    <a class="space" href="../admin-pages/ayudaadmin.html">Ayuda</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <picture>
+
+            <div class="promo">
+                <div id="preview">
+                    <div class="UploadPromo">
+                        <label for="upload" id="upload-label">
+                            <img src="../img/add_photo_alternate_rounded.svg">
+                        </label>
+                        <input type="file" id="upload" accept="image/*" onchange="agregarImagen(event) "
+                            style="display: none;" />
+                    </div>
+                    <!-- <div class="image-wrapper">
+                        <img src="../img/promociones/p1.png" alt="Imagen" />
+                        <button class="delete-button">
+                            Eliminar
+                        </button>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../img/promociones/p2.png" alt="Imagen" />
+                        <button class="delete-button">
+                            Eliminar
+                        </button>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../img/promociones/p3.png" alt="Imagen" />
+                        <button class="delete-button">
+                            Eliminar
+                        </button>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../img/promociones/p4.png" alt="Imagen" />
+                        <button class="delete-button">
+                            Eliminar
+                        </button>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../img/promociones/p5.png" alt="Imagen" />
+                        <button class="delete-button">
+                            Eliminar
+                        </button>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../img/promociones/p6.png" alt="Imagen" />
+                        <button class="delete-button">
+                            Eliminar
+                        </button>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../img/promociones/p7.png" alt="Imagen" />
+                        <button class="delete-button">
+                            Eliminar
+                        </button>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../img/promociones/p8.png" alt="Imagen" />
+                        <button class="delete-button">
+                            Eliminar
+                        </button>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../img/promociones/p9.png" alt="Imagen" />
+                        <button class="delete-button">
+                            Eliminar
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+        </picture>
+    </main>
+    <div class="footerNew">
+        <a class="foot">Oficinas centrales. Av. Santo Domingo 1501, Valle de Santo Domingo, Monterrey, N.L., C.P. 66612.
+            • 81 2619 6729 •
+            magnopro2015@gmail.com</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/sound-btn.js"></script>
+    <script src="../js/Admin.js"></script>
+</body>
+
+</html>

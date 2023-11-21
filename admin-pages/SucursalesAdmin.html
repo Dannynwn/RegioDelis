@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <title>Promociones</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/modal.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,100;1,300;1,600;1,700&family=Exo+2:ital,wght@0,100;0,300;0,700;0,800;1,500;1,900&family=Heebo:wght@100;300;400;600;900&family=Lato:wght@300;400&family=Roboto:ital,wght@1,300&family=Rowdies:wght@300&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,700;1,500;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header1">
+        <div id="Navbar">
+            <div class="contentNav">
+                <img class="proporlogo" src="../img/logo.png">
+                <img class="proporname" src="../img/logonew.png">
+            </div>
+            <div class="noti">
+                <button class="custom-button" id="miBoton1">Administrar</button>
+                <div class="dropdown-Admin" id="miDropdown1">
+                    <img class="Resrlogo" src="../img/logo.png">
+                    <div class="spacedrop"></div>
+                    <a href="../admin-pages/SucursalesAdmin.html" class="btn-reservacion">Crear nueva sucursal</a>
+
+                    <a href="../admin-pages/PromocionesAdmin.html" class="btn-reservacion">Agregar nueva promoción</a>
+
+                    <a href="../admin-pages/menuAdmin.html" class="btn-reservacion">Modificar menu</a>
+
+                </div>
+            </div>
+            <div class="SesionSucefull border">
+
+                <a class="Reg2">
+                    Bienvenido
+                </a>
+
+                <img class="loge" src="../img/dani.png">
+
+            </div>
+        </div>
+        <div id="Navegation">
+            <div class="panels">
+                <div class="optionspage">
+                    <a class="space" href="../admin-pages/homeAdmin.html">Inicio</a>
+                    <a class="linewhite"></a>
+                    <a class="space" href="../admin-pages/PromocionesAdmin.html">Promociones</a>
+                    <a class="linewhite"></a>
+                    <a class="active" href="../admin-pages/SucursalesAdmin.html">Sucursales</a>
+                    <a class="linewhite"></a>
+                    <a class="space" href="../admin-pages/menuAdmin.html">Menu</a>
+                    <a class="linewhite"></a>
+                    <a class="space" href="../admin-pages/ayudaadmin.html">Ayuda</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <button id="miBoton1" onclick="openModal()">Crear nueva sucursal</button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Crear
+                        <link>Sucursal</link>
+                    </h2>
+                    <form id="sucursalForm" onsubmit="crearSucursal()">
+                        <label for="nombre">Nombre de
+                            <link>sucursal</link>:
+                        </label>
+                        <input type="text" id="nombre" required><br>
+
+                        <label for="descripcion">
+                            <link>Descripción</link>:
+                        </label>
+                        <textarea id="descripcion" required></textarea><br>
+
+                        <label for="ubicacion">
+                            <link>Ubicación</link>:
+                        </label>
+                        <input type="text" id="ubicacion" required><br>
+
+                        <label for="ubicacion_gmaps">
+                            <link>Ubicación con Google Maps</link>:
+                        </label>
+                        <input type="text" id="ubicacion_gmaps" required><br>
+
+                        <label for="telefono">Número telefónico:</label>
+                        <input type="tel" id="telefono" required><br>
+
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" required><br>
+
+                        <label for="dias">
+                            <link>Días de apertura</link>:
+                        </label>
+                        <input type="text" id="dias" required><br>
+
+                        <label for="horario">
+                            <link>Horario de apertura y cierre</link>:
+                        </label>
+                        <input type="text" id="horario" required><br>
+
+                        <button type="submit">Crear
+                            <link>Sucursal</link>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="sucursales" id="sucursalesContainer">
+
+            </div>
+            <div class="sucursales" id="sucursalesContainer">
+                <div class="Scs">
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.567722903274!2d-100.2625065889262!3d25.75180517726367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866294b5296197b5%3A0x8f3d36ca406b2366!2sAv.%20Santo%20Domingo%201501%2C%20Valle%20de%20Santo%20Domingo%202do%20Sector%2C%20San%20Nicol%C3%A1s%20de%20los%20Garza%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1697132826583!5m2!1ses-419!2smx"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="infoSucu">
+                        <div class="imgSucu">
+                            <img id="sucursal" src="../img/Sucursales/s1.png">
+                            <h1 class="titulo-sucursal">Sucursal Apodaca</h1>
+                        </div>
+                        <div class="placeSucu">
+                            <a>Av. Concordia 555, Bosques Real I</a>
+                            <a>66612 Cd Apodaca, N.L.</a>
+                            <button class="btn-reservacion" id="miBoton1">Hacer reservación</button>
+                            <div class="dropdown-content" id="miDropdown1">
+                                <img class="Resrlogo" src="../img/logo.png">
+                                <a>Elige una mesa disponible</a>
+                                <select id="tipoReservacion">
+                                    <option value="opcion1">Mesa 1</option>
+                                    <option value="opcion2">Mesa 2</option>
+                                    <option class="notchair" value="opcion3">Mesa 3</option>
+                                    <option value="opcion4">Mesa 4</option>
+                                    <option value="opcion5">Mesa 5</option>
+                                    <option value="opcion6">Mesa 6</option>
+                                </select>
+                                <a>Selecciona la hora de la reservación</a>
+                                <!-- Botones de selección -->
+                                <input type="time" id="datepicker" placeholder="Selecciona una fecha">
+                                <a>Selecciona el dia de la reservación</a>
+                                <div class="upload">
+                                    <input type="date" class="up1" id="datepicker" placeholder="Selecciona una fecha">
+                                    <a type="submit" class="btn-reservacion up2" href="../Sesion/login.html">
+                                        Confirmar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="Scs">
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.534686859562!2d-100.30453098892507!3d25.785928677242232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866293768a2f7fab%3A0xe9dfbbe1c2ec3179!2sAv.%20Benito%20Ju%C3%A1rez%20806%2C%20L%C3%A1zaro%20C%C3%A1rdenas%2C%2066050%20Cd%20Gral%20Escobedo%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1697144584028!5m2!1ses-419!2smx"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="infoSucu">
+                        <div class="imgSucu">
+                            <img id="sucursal" src="../img/Sucursales/s2.png">
+                            <h1 class="titulo-sucursal">Sucursal Escobedo</h1>
+                        </div>
+                        <div class="placeSucu">
+                            <a>Av. Benito Juárez 806, Lázaro Cárdenas.</a>
+                            <a>66050 Cd Gral Escobedo, N.L.</a>
+                            <button class="btn-reservacion" id="miBoton1">Hacer reservación</button>
+                            <div class="dropdown-content" id="miDropdown2">
+                                <img class="Resrlogo" src="../img/logo.png">
+                                <a>Elige una mesa disponible</a>
+                                <select id="tipoReservacion">
+                                    <option value="opcion1">Mesa 1</option>
+                                    <option value="opcion2">Mesa 2</option>
+                                    <option value="opcion3">Mesa 3</option>
+                                    <option value="opcion4">Mesa 4</option>
+                                    <option value="opcion5">Mesa 5</option>
+                                    <option value="opcion6">Mesa 6</option>
+                                </select>
+                                <a>Selecciona la hora de la reservación</a>
+                                <!-- Botones de selección -->
+                                <input type="time" id="datepicker" placeholder="Selecciona una fecha">
+                                <a>Selecciona el dia de la reservación</a>
+                                <div class="upload">
+                                    <input type="date" class="up1" id="datepicker" placeholder="Selecciona una fecha">
+                                    <a type="submit" class="btn-reservacion up2" href="../Sesion/login.html">
+                                        Confirmar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sucursales" id="sucursalesContainer">
+                <div class="Scs">
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1796.9997503874606!2d-100.26990904351094!3d25.73753009431821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866294cfcd80c70d%3A0xedd1c50741e9b98!2sAv.%20Cordillera%20de%20los%20Andes%201111%2C%20Las%20Puentes%201%202do%20Sector%2C%2066460%20San%20Nicol%C3%A1s%20de%20los%20Garza%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1697144785229!5m2!1ses-419!2smx"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="infoSucu">
+                        <div class="imgSucu">
+                            <img id="sucursal" src="../img/Sucursales/s3.png">
+                            <h1 class="titulo-sucursal">Sucursal San Nicolas</h1>
+                        </div>
+                        <div class="placeSucu">
+                            <a>La sucursal mas coqueta de la zona</a>
+                            <a>Av. Cordillera de los Andes 1111, Las Puentes 1 2do Sector, 66460 San Nicolás de los
+                                Garza, N.L.</a>
+                            <a>Lunes a Viernes De 10:00am a 8:00pm</a>
+                            <a>RegioDelisApodaca90@gmail.com</a>
+                            <button class="btn-reservacion" id="miBoton1">Hacer reservación</button>
+                            <div class="dropdown-content" id="miDropdown3">
+                                <img class="Resrlogo" src="../img/logo.png">
+                                <a>Elige una mesa disponible</a>
+                                <select id="tipoReservacion">
+                                    <option value="opcion1">Mesa 1</option>
+                                    <option value="opcion2">Mesa 2</option>
+                                    <option value="opcion3">Mesa 3</option>
+                                    <option value="opcion4">Mesa 4</option>
+                                    <option value="opcion5">Mesa 5</option>
+                                    <option value="opcion6">Mesa 6</option>
+                                </select>
+                                <a>Selecciona la hora de la reservación</a>
+                                <input type="time" id="datepicker" placeholder="Selecciona una fecha">
+                                <a>Selecciona el dia de la reservación</a>
+                                <div class="upload">
+                                    <input type="date" class="up1" id="datepicker" placeholder="Selecciona una fecha">
+                                    <a type="submit" class="btn-reservacion up2" href="../Sesion/login.html">
+                                        Confirmar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="Scs closed">
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.1450176687963!2d-100.322814788929!3d25.66648707731769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be245d2d8ae1%3A0x84d54b385eea3fc3!2sPino%20Su%C3%A1rez%201001%2C%20Centro%2C%2064000%20Monterrey%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1697145069318!5m2!1ses-419!2smx"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="infoSucu">
+                        <div class="imgSucu">
+                            <img id="sucursal" src="../img/Sucursales/s4.png">
+                            <h1 class="titulo-sucursal">Sucursal Monterrey</h1>
+                        </div>
+                        <div class="placeSucu">
+                            <a>Pino Suárez 1001, Centro.</a>
+                            <a>64000 Monterrey, N.L.</a>
+                            <button class="btn-reservacion" id="miBoton1">Hacer reservación</button>
+                            <div class="dropdown-content" id="miDropdown">
+                                <img class="Resrlogo" src="../img/logo.png">
+                                <a>Elige una mesa disponible</a>
+                                <select id="tipoReservacion">
+                                    <option value="opcion1">Mesa 1</option>
+                                    <option value="opcion2">Mesa 2</option>
+                                    <option value="opcion3">Mesa 3</option>
+                                    <option value="opcion4">Mesa 4</option>
+                                    <option value="opcion5">Mesa 5</option>
+                                    <option value="opcion6">Mesa 6</option>
+                                </select>
+                                <a>Selecciona la hora de la reservación</a>
+
+                                <input type="time" id="datepicker" placeholder="Selecciona una fecha">
+                                <a>Selecciona el dia de la reservación</a>
+                                <div class="upload">
+                                    <input type="date" class="up1" id="datepicker" placeholder="Selecciona una fecha">
+                                    <a type="submit" class="btn-reservacion up2" href="../Sesion/login.html">
+                                        Confirmar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="sucursales" id="sucursalesContainer">
+            </div>
+        </article>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/sound-btn.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/Admin.js"></script>
+    <script src="../js/modal.js"></script>
+</body>
+
+</html>

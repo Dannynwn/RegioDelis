@@ -11,6 +11,11 @@
         width: 45%;
         margin-left: 37px;
     }
+
+    .promo .UploadPromo img {
+        min-width: 929.500px;
+    }
+
 }
 
 @media screen and (max-width: 1185px) {

@@ -49,6 +49,28 @@ main {
     cursor: pointer;
 }
 
+.custom-button {
+    background-color: orange;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.603);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#miBoton1 {
+    background-color: orange;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.603);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 #Navbar {
     height: 75%;
     background-color: rgb(49, 48, 47);
@@ -76,6 +98,7 @@ main {
 .panels a {
     text-decoration: none;
     text-align: center;
+    font-size: 0.8vw;
 }
 
 .space {
@@ -174,12 +197,12 @@ article {
 }
 
 .Scs {
-    width: 70%;
     height: 300px;
     margin: 30px;
     background-color: rgb(97, 90, 79);
     border: 3px solid orange;
     display: flex;
+    min-width: 50%;
 }
 
 .mapa {
@@ -367,6 +390,11 @@ li {
 
 }
 
+.noti a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .up1 {
     width: 60%;
 
@@ -383,16 +411,43 @@ li {
 
 .promo {
     width: 95%;
-    display: flex;
     margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .promo img {
+    max-width: 100%;
+    margin: 20px;
+    height: 50vh;
+    width: 50vh;
+    object-fit: cover;
+    border: 3px solid orange;
+    transition-duration: 0.3s;
+}
+
+#preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.promoupload {
     margin: 10px;
     height: 50vh;
     border: 3px solid orange;
     transition-duration: 0.3s;
+    background-color: #949494;
+}
+
+.promoupload img {
+    height: 30%;
+    display: grid;
+    margin: auto
 }
 
 .promo img:hover {
@@ -431,6 +486,23 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 .SesionSucefull {
@@ -529,9 +601,24 @@ footer a {
 
 .dropdown-content {
     display: none;
-    position: sticky;
+    position: absolute;
+    margin-top: 20px;
     min-width: 100px;
     max-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid orange;
+    background-color: #413c3c;
+    z-index: 2;
+}
+
+.dropdown-Admin {
+    display: none;
+    position: absolute;
+    margin-top: 30px;
+    min-width: 100px;
+    max-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 10px;
@@ -546,10 +633,15 @@ footer a {
     padding: 5px;
 }
 
+
 .upload {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.spacedrop {
+    padding-top: 20px;
 }
 
 .upload a {
@@ -571,6 +663,24 @@ footer a {
 }
 
 .dropdown-content a {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.dropdown-Admin a {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.dropdown-admin a {
     margin-top: 10px;
     margin-bottom: 16px;
     text-decoration: none;
